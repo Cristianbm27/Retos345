@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, th, td{
+            border: 2px solid gray;
+            border-collapse: collapse;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="category.js"></script>
+    <title>Registro de Categorias</title>
+</head>
+<body>
+    <h1>Registro de categorías</h1>
+    <div>
+        <input type="text" id="name" placeholder="Nombre">
+        <input type="text" id="description" placeholder="Descripción">
+    
+        <button onclick="registro()" >Agregar registro</button>
+        <button onclick="obtener()">Ver tabla</button>
+        <button onclick="actualizarItem()">Editar</button>
+        </div>
+
+        <h3>Registro</h3>
+
+        <div>
+
+            <table>
+                <tbody id="items">
+                    <tr>
+                        <td>Nombre </td>
+                        <td>Descripción</td>                      
+                    </tr>
+                </tbody>
+            </table>
+    
+        </div>
+
+</body>
+</html>
